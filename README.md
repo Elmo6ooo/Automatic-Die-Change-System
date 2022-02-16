@@ -4,7 +4,7 @@
 This project cooperates with mechanic students. They added a die storage module to the existing machine, and I developed and merged the system function with the current machine program.
 
 In the concept of a sequence diagram, the system will involve three objects machine / storage module, PC, PLC.
-* machine / die storage: This machine is a stamping simulator driven by ball screws. The die storage is added because we want to cut two objects through automatic die change.
+* machine / die storage: This machine is a stamping simulator driven by ball screws. The die storage is added because we want to stamp two objects through automatic die change.
 * PC: Our machine is PC-Based controls.
 * PLC: Sensors on the die storage will store the signal in the PLC register. PLC also controls the gripper jaw and pneumatic cylinder.
 
@@ -23,9 +23,9 @@ Control Interface includes five functions
 ![換刀退刀](https://user-images.githubusercontent.com/88305396/152031578-ce9f64ae-7dd4-41ff-8fc7-7ab494fd6d9b.png)
   
 # Automatic die change demo
-After testing all the functions work,  by marking(object is main or minor die) the composition file, when the next object to cut is different from the die in the punch, it will execute the corresponding function.
+After testing all the functions work,  by marking(object is main or minor die) the composition file, when the next object to stamp is different from the die in the punch, it will execute the corresponding function.
 
-At the beginning of the video, the punch is empty, and the composition shows that we will first cut the triangles(main die) and then the flowers(minor die), so the main die function is activated, after all the triangles object is cut, the change die function is executed to finish the progress.
+At the beginning of the video, the punch is empty, and the composition shows that we will first stamp the triangles(main die) and then the flowers(minor die), so the main die function is activated, after all the triangles object is stamped, the change die function is executed to finish the progress.
 
 
 https://user-images.githubusercontent.com/99638331/154245534-3a4868d4-6694-46e2-9f34-a5a09633fa88.mp4
