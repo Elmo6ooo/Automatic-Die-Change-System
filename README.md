@@ -23,7 +23,7 @@ Control Interface includes five functions
 ![換刀退刀](https://user-images.githubusercontent.com/88305396/152031578-ce9f64ae-7dd4-41ff-8fc7-7ab494fd6d9b.png)
   
 # Automatic die change demo
-After testing all the functions work,  by marking(object is main or minor die) the composition file, when the next object to stamp is different from the die in the punch, it will execute the corresponding function.
+By marking(object is main or minor die) the composition file, when the next object to stamp is different from the die in the punch, it will execute the corresponding function.
 
 At the beginning of the video, the punch is empty, and the composition shows that we will first stamp the triangles(main die) and then the flowers(minor die), so the main die function is activated, after all the triangles object is stamped, the change die function is executed to finish the progress.
 
