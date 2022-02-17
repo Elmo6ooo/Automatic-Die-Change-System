@@ -3,8 +3,8 @@
 
 This project cooperates with mechanic students. They added a die storage module to the existing machine, and I developed and merged the system function with the current machine program.
 
-In the concept of a sequence diagram, the system will involve three objects machine / storage module, PC, PLC.
-* machine / die storage: This machine is a stamping simulator driven by ball screws. The die storage is added because we want to stamp two objects through automatic die change.
+In the concept of a sequence diagram, the system will involve three objects machine/storage module, PC, PLC.
+* machine/die storage: This machine is a stamping simulator driven by ball screws. The die storage is added because we want to stamp two objects through automatic die change.
 * PC: Our machine is PC-Based controls.
 * PLC: Sensors on the die storage will store the signal in the PLC register. PLC also controls the gripper jaw and pneumatic cylinder.
 
