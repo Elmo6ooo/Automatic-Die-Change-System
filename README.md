@@ -1,20 +1,20 @@
 # Automatic Die Change System
-※The code property belongs to the lab, so it is not allowed to open source.
+**※The code property belongs to the lab, so it is not allowed to open source.**
 
 This project cooperates with mechanic students. They added a die storage module to the existing machine, and I developed and merged the system function with the current machine program.
 
 In the concept of a sequence diagram, the system will involve three objects machine/storage module, PC, PLC.
-* machine/die storage: This machine is a stamping simulator driven by ball screws. The die storage is added because we want to stamp two objects through automatic die change.
-* PC: Our machine is PC-Based controls.
-* PLC: Sensors on the die storage will store the signal in the PLC register. PLC also controls the gripper jaw and pneumatic cylinder.
+* **machine/die storage**: This machine is a stamping simulator driven by ball screws. The die storage is added because we want to stamp two objects through automatic die change.
+* **PC**: Our machine is PC-Based controls.
+* **PLC**: Sensors on the die storage will store the signal in the PLC register. PLC also controls the gripper jaw and pneumatic cylinder.
 
 # System control interface
 Control Interface includes five functions
-* Storage reset: Reset the die storage position to the upper layer. This means the pneumatic cylinder can directly push the main die into the punch.
-* Main die: Make sure the storage is at the upper layer and push the main die into the punch. The right part of the control interface will display as the middle picture below then both buttons (main, minor die) will be disabled.
-* Minor die: Make sure the storage is at the lower layer and push the minor die into the punch. The right part of the control interface will display as the right picture below then both buttons (main, minor die) will be disabled.
-* Change die: If there is no die in the punch, this button will be disabled. Otherwise, the die in the punch will change with the other one. 
-* Return die: Return the die to the storage.
+* **Storage reset**: Reset the die storage position to the upper layer. This means the pneumatic cylinder can directly push the main die into the punch.
+* **Main die**: Make sure the storage is at the upper layer and push the main die into the punch. The right part of the control interface will display as the middle picture below then both buttons (main, minor die) will be disabled.
+* **Minor die**: Make sure the storage is at the lower layer and push the minor die into the punch. The right part of the control interface will display as the right picture below then both buttons (main, minor die) will be disabled.
+* **Change die**: If there is no die in the punch, this button will be disabled. Otherwise, the die in the punch will change with the other one. 
+* **Return die**: Return the die to the storage.
 ![image](https://user-images.githubusercontent.com/88305396/151932676-3656d6fd-fcb8-47e3-9ec5-71ede9c41a9e.png)
 
 # Functions flow chart
